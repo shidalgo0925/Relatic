@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatic Academy - Plataforma Educativa de Gestión Documental</title>
+    <meta name="description" content="Relatic Academy - Institución educativa especializada en formación en gestión documental digital, certificaciones profesionales y desarrollo de competencias tecnológicas.">
+    <meta name="keywords" content="educación digital, gestión documental, certificaciones, formación profesional, tecnología educativa, Relatic Academy">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Relatic Academy</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#courses" class="nav-link">Cursos</a>
+                <a href="#certifications" class="nav-link">Certificaciones</a>
+                <a href="#about" class="nav-link">Academia</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <div class="nav-language">
+                    <select id="languageSelect">
+                        <option value="es" selected>ES</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="pt">PT</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Educación Digital</span>
+                </div>
+                <h1 class="hero-title">
+                    Academia de Gestión 
+                    <span class="gradient-text">Documental</span>
+                </h1>
+                <p class="hero-description">
+                    Formamos estudiantes y profesionales en gestión documental digital a través de programas educativos gratuitos, certificaciones académicas y desarrollo de competencias tecnológicas.
+                </p>
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">
+                        <span>Ver Cursos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#certifications" class="btn btn-outline">
+                        <span>Certificaciones</span>
+                        <i class="fas fa-certificate"></i>
+                    </a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-badge">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Cursos asincrónicos y en vivo</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificados oficiales</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-users"></i>
+                        <span>Expertos latinoamericanos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Documentos Legales</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificados</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-id-card"></i>
+                    <span>Identificación</span>
+                </div>
+                <div class="hero-graphic">
+                    <div class="graphic-circle"></div>
+                    <div class="graphic-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Courses Section -->
+            <section id="courses" class="courses">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-book-open"></i>
+                            <span>Programas Educativos</span>
+                        </div>
+                        <h2 class="section-title">Cursos Especializados en Gestión Documental</h2>
+                        <p class="section-description">
+                            Nuestros programas educativos están diseñados para formar profesionales competentes en gestión documental digital
+                        </p>
+                    </div>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <div class="course-header">
+                                <div class="course-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="course-level">Básico</div>
+                            </div>
+                            <h3>Fundamentos de Gestión Documental</h3>
+                            <p>Programa educativo introductorio que cubre los conceptos básicos de gestión documental digital para estudiantes</p>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> 40 horas de contenido</li>
+                                <li><i class="fas fa-check"></i> Certificado oficial</li>
+                                <li><i class="fas fa-check"></i> Acceso de por vida</li>
+                                <li><i class="fas fa-check"></i> Soporte de instructores</li>
+                            </ul>
+                            <div class="course-status">Gratuito</div>
+                            <a href="#contact" class="course-btn">Inscribirse</a>
+                        </div>
+                        
+                        <div class="course-card featured">
+                            <div class="course-badge">Más Popular</div>
+                            <div class="course-header">
+                                <div class="course-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="course-level">Intermedio</div>
+                            </div>
+                            <h3>Seguridad y Compliance Documental</h3>
+                            <p>Programa educativo que profundiza en aspectos de seguridad, cumplimiento normativo y mejores prácticas para estudiantes avanzados</p>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> 60 horas de contenido</li>
+                                <li><i class="fas fa-check"></i> Certificación profesional</li>
+                                <li><i class="fas fa-check"></i> Proyectos prácticos</li>
+                                <li><i class="fas fa-check"></i> Mentoría personalizada</li>
+                            </ul>
+                            <div class="course-status">Gratuito</div>
+                            <a href="#contact" class="course-btn">Inscribirse</a>
+                        </div>
+                        
+                        <div class="course-card">
+                            <div class="course-header">
+                                <div class="course-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="course-level">Avanzado</div>
+                            </div>
+                            <h3>Automatización y Blockchain</h3>
+                            <p>Programa educativo avanzado sobre tecnologías emergentes en gestión documental para estudiantes de nivel experto</p>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> 80 horas de contenido</li>
+                                <li><i class="fas fa-check"></i> Certificación experta</li>
+                                <li><i class="fas fa-check"></i> Casos de estudio reales</li>
+                                <li><i class="fas fa-check"></i> Red de profesionales</li>
+                            </ul>
+                            <div class="course-status">Gratuito</div>
+                            <a href="#contact" class="course-btn">Inscribirse</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-cogs"></i>
+                    <span>Nuestros Servicios</span>
+                </div>
+                <h2 class="section-title">Soluciones Integrales para tu Organización</h2>
+                <p class="section-description">
+                    Ofrecemos una suite completa de servicios de gestión documental diseñados para organizaciones modernas
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Gestión de Certificados</h3>
+                    <p>Emisión, verificación y gestión de certificados académicos y profesionales con tecnología blockchain</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Verificación instantánea</li>
+                        <li><i class="fas fa-check"></i> Almacenamiento seguro</li>
+                        <li><i class="fas fa-check"></i> Acceso global</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Identificación Digital</h3>
+                    <p>Sistema de identificación digital seguro para empleados, estudiantes y miembros de organizaciones</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Autenticación biométrica</li>
+                        <li><i class="fas fa-check"></i> Multi-factor</li>
+                        <li><i class="fas fa-check"></i> Integración con sistemas</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Documentos Legales</h3>
+                    <p>Gestión y verificación de documentos legales, contratos y acuerdos con validez jurídica</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Firma digital</li>
+                        <li><i class="fas fa-check"></i> Auditoría completa</li>
+                        <li><i class="fas fa-check"></i> Cumplimiento legal</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Base de Datos Centralizada</h3>
+                    <p>Almacenamiento centralizado y seguro de todos los documentos con acceso controlado</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Backup automático</li>
+                        <li><i class="fas fa-check"></i> Búsqueda avanzada</li>
+                        <li><i class="fas fa-check"></i> Reportes detallados</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="certifications">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificaciones</span>
+                        </div>
+                        <h2 class="section-title">Certificaciones Académicas</h2>
+                        <p class="section-description">
+                            Obtén certificaciones académicas reconocidas en gestión documental digital para estudiantes
+                        </p>
+                    </div>
+                    <div class="certifications-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>Certificación Académica Básica</h3>
+                            <p>Certificación académica en Fundamentos de Gestión Documental Digital para estudiantes</p>
+                            <ul class="cert-requirements">
+                                <li>Completar curso básico</li>
+                                <li>Examen teórico (80% mínimo)</li>
+                                <li>Proyecto práctico</li>
+                            </ul>
+                            <div class="cert-validity">Válida por 2 años</div>
+                        </div>
+                        
+                        <div class="cert-card featured">
+                            <div class="cert-badge">Recomendada</div>
+                            <div class="cert-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Certificación Académica Intermedia</h3>
+                            <p>Certificación académica avanzada en Gestión Documental y Compliance para estudiantes</p>
+                            <ul class="cert-requirements">
+                                <li>Certificación básica previa</li>
+                                <li>Curso intermedio completado</li>
+                                <li>Examen práctico avanzado</li>
+                                <li>Portfolio de proyectos</li>
+                            </ul>
+                            <div class="cert-validity">Válida por 3 años</div>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Certificación Académica Avanzada</h3>
+                            <p>Certificación académica de nivel experto en Tecnologías Emergentes para estudiantes avanzados</p>
+                            <ul class="cert-requirements">
+                                <li>Certificación profesional</li>
+                                <li>Curso avanzado completado</li>
+                                <li>Investigación aplicada</li>
+                                <li>Presentación de caso de estudio</li>
+                            </ul>
+                            <div class="cert-validity">Válida por 5 años</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">
+                        <i class="fas fa-university"></i>
+                        <span>Nuestra Academia</span>
+                    </div>
+                    <h2 class="section-title">Institución Educativa de Excelencia</h2>
+                    <p class="about-description">
+                        Relatic Academy es una institución educativa sin fines de lucro especializada en formación académica 
+                        en gestión documental digital. Nuestra misión es desarrollar competencias tecnológicas 
+                        y formar estudiantes altamente capacitados en el manejo de sistemas documentales modernos.
+                    </p>
+                    <p class="about-description">
+                        Con sede en Panamá y presencia educativa en múltiples países de América Latina, 
+                        ofrecemos programas educativos gratuitos, certificaciones académicas y desarrollo 
+                        de competencias estudiantiles en tecnologías emergentes.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Seguridad Garantizada</h4>
+                                <p>Encriptación AES-256 y cumplimiento de estándares internacionales</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Disponibilidad 24/7</h4>
+                                <p>Servicios disponibles las 24 horas del día, los 7 días de la semana</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Equipo Experto</h4>
+                                <p>Profesionales especializados en tecnología y gestión documental</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <div class="card-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="card-info">
+                                <h4>CEO - Relatic Internacional</h4>
+                                <p>Liderando la transformación digital</p>
+                            </div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="card-stat">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="card-stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Soporte</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Virtual Assistant Section -->
+            <section class="assistant-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-robot"></i>
+                            <span>Asistente Virtual</span>
+                        </div>
+                        <h2 class="section-title">Consulta tus Documentos</h2>
+                        <p class="section-description">
+                            Utiliza nuestro asistente virtual para consultar tus documentos disponibles de forma rápida y segura
+                        </p>
+                    </div>
+                    <div class="assistant-container">
+                        <div class="assistant-card">
+                            <div class="assistant-header">
+                                <div class="assistant-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="assistant-info">
+                                    <h3>Asistente Virtual Relatic</h3>
+                                    <span class="status online">En línea</span>
+                                </div>
+                                <button class="close-btn" id="closeAssistant">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="assistant-message">
+                                <p>¡Hola! Soy tu asistente virtual</p>
+                                <p>Ingresa tu número de cédula para consultar tus documentos disponibles (certificados, carnets y cartas de aceptación).</p>
+                            </div>
+                            
+                            <div class="services-available">
+                                <h4>Servicios Disponibles</h4>
+                                <p>Si quieres tener acceso al historial completo de tus documentos, explora los siguientes pasos</p>
+                            </div>
+
+                            <form class="id-form" id="idForm">
+                                <div class="input-group">
+                                    <label for="idNumber">Ingresa tu número de cédula:</label>
+                                    <div class="input-container">
+                                        <input type="text" id="idNumber" placeholder="123456789" required>
+                                        <button type="submit" class="submit-btn">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="chat-interface" id="chatInterface" style="display: none;">
+                                <div class="chat-messages" id="chatMessages"></div>
+                                <div class="chat-input">
+                                    <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
+                                    <button id="sendBtn">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Educational Section -->
+            <section class="educational-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Centro Educativo</span>
+                        </div>
+                        <h2 class="section-title">Aprende sobre Gestión Documental</h2>
+                        <p class="section-description">
+                            Recursos educativos y guías para entender mejor la gestión documental digital
+                        </p>
+                    </div>
+                    <div class="educational-grid">
+                        <div class="educational-card">
+                            <div class="card-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Guías de Usuario</h3>
+                            <p>Aprende a usar nuestra plataforma con guías paso a paso y tutoriales interactivos</p>
+                            <ul class="educational-list">
+                                <li><i class="fas fa-check"></i> Cómo subir documentos</li>
+                                <li><i class="fas fa-check"></i> Verificación de certificados</li>
+                                <li><i class="fas fa-check"></i> Gestión de permisos</li>
+                            </ul>
+                            <a href="#" class="educational-link">
+                                <span>Ver Guías</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="educational-card">
+                            <div class="card-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3>Videos Tutoriales</h3>
+                            <p>Videos explicativos que te ayudarán a dominar todas las funcionalidades de la plataforma</p>
+                            <ul class="educational-list">
+                                <li><i class="fas fa-check"></i> Introducción a la plataforma</li>
+                                <li><i class="fas fa-check"></i> Seguridad y privacidad</li>
+                                <li><i class="fas fa-check"></i> Mejores prácticas</li>
+                            </ul>
+                            <a href="#" class="educational-link">
+                                <span>Ver Videos</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="educational-card">
+                            <div class="card-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h3>Preguntas Frecuentes</h3>
+                            <p>Encuentra respuestas rápidas a las preguntas más comunes sobre nuestros servicios</p>
+                            <ul class="educational-list">
+                                <li><i class="fas fa-check"></i> ¿Cómo funciona la verificación?</li>
+                                <li><i class="fas fa-check"></i> ¿Es seguro mi información?</li>
+                                <li><i class="fas fa-check"></i> ¿Qué documentos puedo subir?</li>
+                            </ul>
+                            <a href="#" class="educational-link">
+                                <span>Ver FAQ</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="educational-card">
+                            <div class="card-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Certificaciones</h3>
+                            <p>Obtén certificaciones en gestión documental digital y mejora tus habilidades profesionales</p>
+                            <ul class="educational-list">
+                                <li><i class="fas fa-check"></i> Certificación básica</li>
+                                <li><i class="fas fa-check"></i> Certificación avanzada</li>
+                                <li><i class="fas fa-check"></i> Certificación empresarial</li>
+                            </ul>
+                            <a href="#" class="educational-link">
+                                <span>Ver Certificaciones</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Section -->
+            <section class="technology">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-microchip"></i>
+                            <span>Tecnología</span>
+                        </div>
+                        <h2 class="section-title">Tecnología de Vanguardia</h2>
+                        <p class="section-description">
+                            Utilizamos las últimas tecnologías para garantizar la seguridad y eficiencia de nuestros servicios
+                        </p>
+                    </div>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Encriptación AES-256</h3>
+                            <p>Protección de datos con el estándar militar de encriptación</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <h3>Blockchain</h3>
+                            <p>Verificación inmutable de documentos y transacciones</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Automatización Avanzada</h3>
+                            <p>Procesamiento automático y análisis de documentos con algoritmos especializados</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud Computing</h3>
+                            <p>Infraestructura escalable y disponible globalmente</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-badge">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contacto</span>
+                    </div>
+                    <h2 class="section-title">Hablemos de tu Proyecto</h2>
+                    <p class="contact-description">
+                        Estamos aquí para ayudarte. Contáctanos para más información sobre nuestros servicios
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Dirección</h4>
+                                <p>Torre Ejecutiva, Piso 15<br>Panamá, República de Panamá</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Teléfono</h4>
+                                <p>+507 1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@relaticinternacional.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horario</h4>
+                                <p>Lunes - Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Empresa/Organización</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio de interés</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="certificados">Gestión de Certificados</option>
+                                <option value="identificacion">Identificación Digital</option>
+                                <option value="legales">Documentos Legales</option>
+                                <option value="base-datos">Base de Datos Centralizada</option>
+                                <option value="consultoria">Consultoría</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Relatic Academy</span>
+                    </div>
+                    <p>Institución educativa sin fines de lucro especializada en formación académica gratuita en gestión documental digital y desarrollo de competencias tecnológicas estudiantiles.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Programas</h3>
+                    <ul>
+                        <li><a href="#courses">Cursos Básicos</a></li>
+                        <li><a href="#courses">Cursos Intermedios</a></li>
+                        <li><a href="#courses">Cursos Avanzados</a></li>
+                        <li><a href="#certifications">Certificaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Academia</h3>
+                    <ul>
+                        <li><a href="#about">Sobre la Academia</a></li>
+                        <li><a href="#about">Instructores</a></li>
+                        <li><a href="#contact">Admisiones</a></li>
+                        <li><a href="#contact">Becas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Soporte</h3>
+                    <ul>
+                        <li><a href="#contact">Centro de Ayuda</a></li>
+                        <li><a href="#contact">Política de Privacidad</a></li>
+                        <li><a href="#contact">Términos de Servicio</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Relatic Academy. Todos los derechos reservados.</p>
+                <p>Institución Educativa Registrada | Licencia Educativa: EDU-2024-001</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
