@@ -3,27 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatic Academy - Plataforma Educativa de Gestión Documental</title>
+    <title>RELATIC ACADEMIA - Red Académica Latinoamericana de Investigación Cualitativa</title>
     <meta name="description" content="Relatic Academy - Institución educativa especializada en formación en gestión documental digital, certificaciones profesionales y desarrollo de competencias tecnológicas.">
     <meta name="keywords" content="educación digital, gestión documental, certificaciones, formación profesional, tecnología educativa, Relatic Academy">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/logo-relatic-compact.svg">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Relatic Academy</span>
+                <img src="images/logo-relatic-academia.svg" alt="Relatic Academy Logo" >
+                <!--<span>RELATIC ACADEMIA</span>-->
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link active">Inicio</a>
-                <a href="#courses" class="nav-link">Cursos</a>
-                <a href="#certifications" class="nav-link">Certificaciones</a>
-                <a href="#about" class="nav-link">Academia</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#courses" class="nav-link dropdown-toggle">
+                        Programas <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#courses" class="dropdown-link">Cursos</a>
+                        <a href="#services" class="dropdown-link">Servicios</a>
+                        <a href="#certifications" class="dropdown-link">Certificaciones</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#about" class="nav-link dropdown-toggle">
+                        Academia <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#about" class="dropdown-link">Acerca de</a>
+                        <a href="#educational" class="dropdown-link">Recursos</a>
+                        <a href="#accreditation" class="dropdown-link">Acreditaciones</a>
+                        <a href="#faculty" class="dropdown-link">Facultad</a>
+                        <a href="#research" class="dropdown-link">Investigación</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#technology" class="nav-link dropdown-toggle">
+                        Recursos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#technology" class="dropdown-link">Tecnología</a>
+                        <a href="#admissions" class="dropdown-link">Admisiones</a>
+                        <a href="#academic-policies" class="dropdown-link">Políticas</a>
+                        <a href="#testimonials" class="dropdown-link">Testimonios</a>
+                        <a href="#scholarships" class="dropdown-link">Becas</a>
+                        <a href="#facilities" class="dropdown-link">Instalaciones</a>
+                        <a href="#events" class="dropdown-link">Eventos</a>
+                    </div>
+                </div>
+                
                 <a href="#contact" class="nav-link">Contacto</a>
+                
                 <div class="nav-language">
                     <select id="languageSelect">
                         <option value="es" selected>ES</option>
@@ -50,11 +89,11 @@
                     <span>Educación Digital</span>
                 </div>
                 <h1 class="hero-title">
-                    Academia de Gestión 
-                    <span class="gradient-text">Documental</span>
+                    RELATIC <br>
+                    <span class="gradient-text">Red Académica Latinoamericana</span>
                 </h1>
                 <p class="hero-description">
-                    Formamos estudiantes y profesionales en gestión documental digital a través de programas educativos gratuitos, certificaciones académicas y desarrollo de competencias tecnológicas.
+                    Red Académica Latinoamericana de Investigación Cualitativa - Academia especializada en formación en gestión documental digital, investigación cualitativa y desarrollo de competencias tecnológicas.
                 </p>
                 <div class="hero-actions">
                     <a href="#courses" class="btn btn-primary">
@@ -339,16 +378,16 @@
                         <i class="fas fa-university"></i>
                         <span>Nuestra Academia</span>
                     </div>
-                    <h2 class="section-title">Institución Educativa de Excelencia</h2>
+                    <h2 class="section-title">Red Académica Latinoamericana de Investigación Cualitativa</h2>
                     <p class="about-description">
-                        Relatic Academy es una institución educativa sin fines de lucro especializada en formación académica 
-                        en gestión documental digital. Nuestra misión es desarrollar competencias tecnológicas 
-                        y formar estudiantes altamente capacitados en el manejo de sistemas documentales modernos.
+                        RELATIC ACADEMIA es una institución educativa sin fines de lucro especializada en investigación cualitativa 
+                        y formación académica en gestión documental digital. Nuestra misión es desarrollar competencias tecnológicas 
+                        y formar investigadores altamente capacitados en metodologías cualitativas y sistemas documentales modernos.
                     </p>
                     <p class="about-description">
-                        Con sede en Panamá y presencia educativa en múltiples países de América Latina, 
+                        Como Red Latinoamericana, tenemos presencia educativa en múltiples países de América Latina, 
                         ofrecemos programas educativos gratuitos, certificaciones académicas y desarrollo 
-                        de competencias estudiantiles en tecnologías emergentes.
+                        de competencias en investigación cualitativa y tecnologías emergentes.
                     </p>
                     <div class="about-features">
                         <div class="feature">
@@ -401,72 +440,9 @@
         </div>
     </section>
 
-            <!-- Virtual Assistant Section -->
-            <section class="assistant-section">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-badge">
-                            <i class="fas fa-robot"></i>
-                            <span>Asistente Virtual</span>
-                        </div>
-                        <h2 class="section-title">Consulta tus Documentos</h2>
-                        <p class="section-description">
-                            Utiliza nuestro asistente virtual para consultar tus documentos disponibles de forma rápida y segura
-                        </p>
-                    </div>
-                    <div class="assistant-container">
-                        <div class="assistant-card">
-                            <div class="assistant-header">
-                                <div class="assistant-avatar">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <div class="assistant-info">
-                                    <h3>Asistente Virtual Relatic</h3>
-                                    <span class="status online">En línea</span>
-                                </div>
-                                <button class="close-btn" id="closeAssistant">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            
-                            <div class="assistant-message">
-                                <p>¡Hola! Soy tu asistente virtual</p>
-                                <p>Ingresa tu número de cédula para consultar tus documentos disponibles (certificados, carnets y cartas de aceptación).</p>
-                            </div>
-                            
-                            <div class="services-available">
-                                <h4>Servicios Disponibles</h4>
-                                <p>Si quieres tener acceso al historial completo de tus documentos, explora los siguientes pasos</p>
-                            </div>
-
-                            <form class="id-form" id="idForm">
-                                <div class="input-group">
-                                    <label for="idNumber">Ingresa tu número de cédula:</label>
-                                    <div class="input-container">
-                                        <input type="text" id="idNumber" placeholder="123456789" required>
-                                        <button type="submit" class="submit-btn">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div class="chat-interface" id="chatInterface" style="display: none;">
-                                <div class="chat-messages" id="chatMessages"></div>
-                                <div class="chat-input">
-                                    <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
-                                    <button id="sendBtn">
-                                        <i class="fas fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!-- Educational Section -->
-            <section class="educational-section">
+            <section id="educational" class="educational-section">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-badge">
@@ -550,8 +526,189 @@
                 </div>
             </section>
 
+            <!-- Accreditation Section -->
+            <section id="accreditation" class="accreditation">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Acreditación Educativa</span>
+                        </div>
+                        <h2 class="section-title">Acreditaciones y Certificaciones</h2>
+                        <p class="section-description">
+                            RELATIC ACADEMIA cuenta con acreditaciones internacionales que garantizan la calidad de nuestros programas educativos
+                        </p>
+                    </div>
+                    <div class="accreditation-grid">
+                        <div class="accreditation-card">
+                            <div class="accreditation-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h3>Acreditación Internacional</h3>
+                            <p>Certificada por la Red Latinoamericana de Instituciones de Educación Superior (RILIES)</p>
+                            <div class="accreditation-status">Vigente hasta 2027</div>
+                        </div>
+                        <div class="accreditation-card">
+                            <div class="accreditation-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Licencia Educativa</h3>
+                            <p>Licencia EDU-2024-001 otorgada por el Ministerio de Educación de Panamá</p>
+                            <div class="accreditation-status">Vigente hasta 2026</div>
+                        </div>
+                        <div class="accreditation-card">
+                            <div class="accreditation-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>ISO 21001:2018</h3>
+                            <p>Sistema de Gestión para Organizaciones Educativas certificado por ISO</p>
+                            <div class="accreditation-status">Certificado vigente</div>
+                        </div>
+                        <div class="accreditation-card">
+                            <div class="accreditation-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Calidad Académica</h3>
+                            <p>Reconocida por la Asociación Latinoamericana de Investigación Cualitativa (ALIC)</p>
+                            <div class="accreditation-status">Miembro activo</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Faculty Section -->
+            <section id="faculty" class="faculty">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-users"></i>
+                            <span>Nuestra Facultad</span>
+                        </div>
+                        <h2 class="section-title">Instructores y Expertos Académicos</h2>
+                        <p class="section-description">
+                            Nuestro equipo de instructores está compuesto por profesionales altamente calificados con amplia experiencia en investigación cualitativa
+                        </p>
+                    </div>
+                    <div class="faculty-grid">
+                        <div class="faculty-card">
+                            <div class="faculty-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Dr. María Elena Rodríguez</h3>
+                            <p class="faculty-title">Directora Académica</p>
+                            <p class="faculty-credentials">PhD en Metodología de Investigación - Universidad de Barcelona</p>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">Investigación Cualitativa</span>
+                                <span class="expertise-tag">Fenomenología</span>
+                                <span class="expertise-tag">Teoría Fundamentada</span>
+                            </div>
+                        </div>
+                        <div class="faculty-card">
+                            <div class="faculty-avatar">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3>Dr. Carlos Alberto Méndez</h3>
+                            <p class="faculty-title">Coordinador de Investigación</p>
+                            <p class="faculty-credentials">PhD en Ciencias Sociales - Universidad Nacional de Colombia</p>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">Etnografía</span>
+                                <span class="expertise-tag">Análisis de Contenido</span>
+                                <span class="expertise-tag">Metodología Mixta</span>
+                            </div>
+                        </div>
+                        <div class="faculty-card">
+                            <div class="faculty-avatar">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h3>Dra. Ana Patricia Silva</h3>
+                            <p class="faculty-title">Especialista en Tecnología Educativa</p>
+                            <p class="faculty-credentials">PhD en Educación - Universidad de Chile</p>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">TIC en Educación</span>
+                                <span class="expertise-tag">Aprendizaje Digital</span>
+                                <span class="expertise-tag">Innovación Pedagógica</span>
+                            </div>
+                        </div>
+                        <div class="faculty-card">
+                            <div class="faculty-avatar">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h3>Dr. Roberto José Herrera</h3>
+                            <p class="faculty-title">Especialista en Gestión Documental</p>
+                            <p class="faculty-credentials">PhD en Ciencias de la Información - Universidad de Costa Rica</p>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">Gestión Documental</span>
+                                <span class="expertise-tag">Blockchain</span>
+                                <span class="expertise-tag">Seguridad Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research" class="research">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-microscope"></i>
+                            <span>Investigación Académica</span>
+                        </div>
+                        <h2 class="section-title">Centro de Investigación Cualitativa</h2>
+                        <p class="section-description">
+                            Desarrollamos investigación de vanguardia en metodologías cualitativas y gestión documental digital
+                        </p>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label">Proyectos de Investigación</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Publicaciones Académicas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Países Colaboradores</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">8</div>
+                                <div class="stat-label">Revistas Indexadas</div>
+                            </div>
+                        </div>
+                        <div class="research-areas">
+                            <h3>Áreas de Investigación</h3>
+                            <div class="areas-grid">
+                                <div class="area-item">
+                                    <i class="fas fa-search"></i>
+                                    <h4>Metodologías Cualitativas</h4>
+                                    <p>Desarrollo de nuevas metodologías y técnicas de investigación cualitativa</p>
+                                </div>
+                                <div class="area-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    <h4>Gestión Documental Digital</h4>
+                                    <p>Innovación en sistemas de gestión y preservación documental</p>
+                                </div>
+                                <div class="area-item">
+                                    <i class="fas fa-laptop"></i>
+                                    <h4>Tecnología Educativa</h4>
+                                    <p>Integración de tecnologías emergentes en procesos educativos</p>
+                                </div>
+                                <div class="area-item">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Investigación Social</h4>
+                                    <p>Estudios sobre impacto social de las tecnologías digitales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Technology Section -->
-            <section class="technology">
+            <section id="technology" class="technology">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-badge">
@@ -560,7 +717,7 @@
                         </div>
                         <h2 class="section-title">Tecnología de Vanguardia</h2>
                         <p class="section-description">
-                            Utilizamos las últimas tecnologías para garantizar la seguridad y eficiencia de nuestros servicios
+                            Utilizamos las últimas tecnologías para garantizar la seguridad y eficiencia de nuestros servicios educativos
                         </p>
                     </div>
                     <div class="tech-grid">
@@ -569,28 +726,499 @@
                                 <i class="fas fa-lock"></i>
                             </div>
                             <h3>Encriptación AES-256</h3>
-                            <p>Protección de datos con el estándar militar de encriptación</p>
+                            <p>Protección de datos académicos con el estándar militar de encriptación</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <i class="fas fa-link"></i>
                             </div>
                             <h3>Blockchain</h3>
-                            <p>Verificación inmutable de documentos y transacciones</p>
+                            <p>Verificación inmutable de certificados y documentos académicos</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <i class="fas fa-cogs"></i>
                             </div>
                             <h3>Automatización Avanzada</h3>
-                            <p>Procesamiento automático y análisis de documentos con algoritmos especializados</p>
+                            <p>Procesamiento automático de documentos académicos con algoritmos especializados</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <i class="fas fa-cloud"></i>
                             </div>
                             <h3>Cloud Computing</h3>
-                            <p>Infraestructura escalable y disponible globalmente</p>
+                            <p>Infraestructura escalable para plataformas educativas globales</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admissions Section -->
+            <section id="admissions" class="admissions">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Admisiones</span>
+                        </div>
+                        <h2 class="section-title">Proceso de Admisión</h2>
+                        <p class="section-description">
+                            Únete a nuestra comunidad académica. Nuestro proceso de admisión es transparente y accesible
+                        </p>
+                    </div>
+                    <div class="admissions-content">
+                        <div class="admissions-process">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Solicitud de Admisión</h3>
+                                    <p>Completa el formulario de admisión en línea con tus datos personales y académicos</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Revisión de Documentos</h3>
+                                    <p>Nuestro equipo académico revisa tu perfil y documentos de respaldo</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Entrevista Académica</h3>
+                                    <p>Entrevista virtual con nuestro equipo para evaluar tu motivación y objetivos</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Decisión de Admisión</h3>
+                                    <p>Recibe la notificación de admisión y las instrucciones para comenzar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admissions-requirements">
+                            <h3>Requisitos de Admisión</h3>
+                            <div class="requirements-grid">
+                                <div class="requirement-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h4>Educación Básica</h4>
+                                    <p>Bachillerato o equivalente reconocido</p>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-language"></i>
+                                    <h4>Idioma</h4>
+                                    <p>Dominio del español (nativo o B2+ certificado)</p>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-laptop"></i>
+                                    <h4>Tecnología</h4>
+                                    <p>Acceso a computadora e internet estable</p>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-heart"></i>
+                                    <h4>Motivación</h4>
+                                    <p>Interés genuino en investigación cualitativa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Policies Section -->
+            <section id="academic-policies" class="academic-policies">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Políticas Académicas</span>
+                        </div>
+                        <h2 class="section-title">Marco Normativo Académico</h2>
+                        <p class="section-description">
+                            Nuestras políticas académicas garantizan la calidad, integridad y equidad en todos nuestros programas
+                        </p>
+                    </div>
+                    <div class="policies-grid">
+                        <div class="policy-card">
+                            <div class="policy-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Código de Honor Académico</h3>
+                            <p>Compromiso con la integridad académica, honestidad intelectual y respeto mutuo en todas las actividades académicas</p>
+                            <ul class="policy-list">
+                                <li>Prohibición de plagio y fraude académico</li>
+                                <li>Respeto a la propiedad intelectual</li>
+                                <li>Colaboración ética en investigaciones</li>
+                                <li>Transparencia en metodologías</li>
+                            </ul>
+                        </div>
+                        <div class="policy-card">
+                            <div class="policy-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Política de Diversidad e Inclusión</h3>
+                            <p>Compromiso con la diversidad cultural, inclusión social y equidad de género en nuestra comunidad académica</p>
+                            <ul class="policy-list">
+                                <li>Acceso equitativo a oportunidades</li>
+                                <li>Respeto a la diversidad cultural</li>
+                                <li>Ambiente libre de discriminación</li>
+                                <li>Apoyo a grupos subrepresentados</li>
+                            </ul>
+                        </div>
+                        <div class="policy-card">
+                            <div class="policy-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Política de Privacidad y Datos</h3>
+                            <p>Protección de datos personales y académicos de nuestros estudiantes según estándares internacionales</p>
+                            <ul class="policy-list">
+                                <li>Cumplimiento GDPR y normativas locales</li>
+                                <li>Encriptación de datos sensibles</li>
+                                <li>Consentimiento informado</li>
+                                <li>Derecho al olvido</li>
+                            </ul>
+                        </div>
+                        <div class="policy-card">
+                            <div class="policy-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Política de Evaluación</h3>
+                            <p>Sistema de evaluación transparente, justo y basado en competencias académicas y profesionales</p>
+                            <ul class="policy-list">
+                                <li>Criterios de evaluación claros</li>
+                                <li>Retroalimentación constructiva</li>
+                                <li>Oportunidades de mejora</li>
+                                <li>Apelaciones justas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-quote-left"></i>
+                            <span>Testimonios</span>
+                        </div>
+                        <h2 class="section-title">Lo que Dicen Nuestros Estudiantes</h2>
+                        <p class="section-description">
+                            Conoce las experiencias de nuestros estudiantes y egresados en RELATIC ACADEMIA
+                        </p>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"RELATIC ACADEMIA transformó mi comprensión de la investigación cualitativa. Los instructores son excepcionales y la metodología es innovadora."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>María González</h4>
+                                    <p>Estudiante de Maestría en Investigación Cualitativa</p>
+                                    <div class="author-location">México</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"La formación en gestión documental digital me abrió nuevas oportunidades profesionales. El enfoque práctico es excelente."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Carlos Mendoza</h4>
+                                    <p>Egresado - Especialización en Gestión Documental</p>
+                                    <div class="author-location">Colombia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"La red académica latinoamericana es increíble. He colaborado con investigadores de toda la región en proyectos fascinantes."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Ana Patricia Silva</h4>
+                                    <p>Investigadora - Doctorado en Ciencias Sociales</p>
+                                    <div class="author-location">Chile</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scholarships Section -->
+            <section id="scholarships" class="scholarships">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-gift"></i>
+                            <span>Becas y Ayuda Financiera</span>
+                        </div>
+                        <h2 class="section-title">Programas de Apoyo Económico</h2>
+                        <p class="section-description">
+                            Creemos en el acceso equitativo a la educación. Ofrecemos diversos programas de apoyo económico
+                        </p>
+                    </div>
+                    <div class="scholarships-grid">
+                        <div class="scholarship-card">
+                            <div class="scholarship-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Beca de Excelencia Académica</h3>
+                            <p>Para estudiantes con destacado rendimiento académico y potencial investigativo</p>
+                            <div class="scholarship-details">
+                                <div class="scholarship-amount">100% de descuento</div>
+                                <div class="scholarship-requirements">
+                                    <h4>Requisitos:</h4>
+                                    <ul>
+                                        <li>Promedio académico superior a 4.5/5.0</li>
+                                        <li>Proyecto de investigación innovador</li>
+                                        <li>Compromiso con la comunidad académica</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scholarship-card">
+                            <div class="scholarship-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Beca de Diversidad e Inclusión</h3>
+                            <p>Para estudiantes de grupos subrepresentados y comunidades vulnerables</p>
+                            <div class="scholarship-details">
+                                <div class="scholarship-amount">75% de descuento</div>
+                                <div class="scholarship-requirements">
+                                    <h4>Requisitos:</h4>
+                                    <ul>
+                                        <li>Pertenencia a grupo subrepresentado</li>
+                                        <li>Necesidad económica comprobada</li>
+                                        <li>Compromiso con el desarrollo comunitario</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scholarship-card">
+                            <div class="scholarship-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h3>Beca de Intercambio Latinoamericano</h3>
+                            <p>Para estudiantes internacionales de países latinoamericanos</p>
+                            <div class="scholarship-details">
+                                <div class="scholarship-amount">50% de descuento</div>
+                                <div class="scholarship-requirements">
+                                    <h4>Requisitos:</h4>
+                                    <ul>
+                                        <li>Nacionalidad latinoamericana</li>
+                                        <li>Residencia fuera de Panamá</li>
+                                        <li>Interés en investigación regional</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Facilities Section -->
+            <section id="facilities" class="facilities">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-building"></i>
+                            <span>Instalaciones y Recursos</span>
+                        </div>
+                        <h2 class="section-title">Infraestructura Educativa de Vanguardia</h2>
+                        <p class="section-description">
+                            Contamos con instalaciones modernas y recursos tecnológicos de última generación para apoyar el aprendizaje
+                        </p>
+                    </div>
+                    <div class="facilities-content">
+                        <div class="facilities-grid">
+                            <div class="facility-card">
+                                <div class="facility-icon">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <h3>Laboratorios de Computación</h3>
+                                <p>Laboratorios equipados con computadoras de última generación y software especializado para investigación cualitativa</p>
+                                <ul class="facility-features">
+                                    <li>50+ estaciones de trabajo</li>
+                                    <li>Software NVivo y Atlas.ti</li>
+                                    <li>Acceso 24/7 para estudiantes</li>
+                                    <li>Soporte técnico especializado</li>
+                                </ul>
+                            </div>
+                            <div class="facility-card">
+                                <div class="facility-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3>Biblioteca Digital</h3>
+                                <p>Acceso a más de 50,000 recursos académicos digitales y bases de datos especializadas en investigación cualitativa</p>
+                                <ul class="facility-features">
+                                    <li>50,000+ recursos digitales</li>
+                                    <li>Bases de datos internacionales</li>
+                                    <li>Acceso remoto 24/7</li>
+                                    <li>Servicio de consulta especializada</li>
+                                </ul>
+                            </div>
+                            <div class="facility-card">
+                                <div class="facility-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h3>Estudios de Grabación</h3>
+                                <p>Estudios profesionales equipados para la producción de contenido educativo y entrevistas de investigación</p>
+                                <ul class="facility-features">
+                                    <li>Equipos de grabación HD</li>
+                                    <li>Software de edición profesional</li>
+                                    <li>Transmisión en vivo</li>
+                                    <li>Capacidad para 20 personas</li>
+                                </ul>
+                            </div>
+                            <div class="facility-card">
+                                <div class="facility-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Salas de Colaboración</h3>
+                                <p>Espacios diseñados para el trabajo colaborativo y reuniones de grupos de investigación</p>
+                                <ul class="facility-features">
+                                    <li>Pantallas interactivas</li>
+                                    <li>Mobiliario flexible</li>
+                                    <li>Conectividad de alta velocidad</li>
+                                    <li>Reservas en línea</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="facilities-stats">
+                            <div class="facility-stat">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Laboratorios Especializados</div>
+                            </div>
+                            <div class="facility-stat">
+                                <div class="stat-number">200+</div>
+                                <div class="stat-label">Estaciones de Trabajo</div>
+                            </div>
+                            <div class="facility-stat">
+                                <div class="stat-number">50K+</div>
+                                <div class="stat-label">Recursos Digitales</div>
+                            </div>
+                            <div class="facility-stat">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Acceso a Recursos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section id="events" class="events">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Eventos Académicos</span>
+                        </div>
+                        <h2 class="section-title">Conferencias y Eventos</h2>
+                        <p class="section-description">
+                            Participa en nuestros eventos académicos, conferencias y seminarios especializados en investigación cualitativa
+                        </p>
+                    </div>
+                    <div class="events-grid">
+                        <div class="event-card featured">
+                            <div class="event-badge">Próximo Evento</div>
+                            <div class="event-date">
+                                <div class="date-day">15</div>
+                                <div class="date-month">MAR</div>
+                            </div>
+                            <div class="event-content">
+                                <h3>Conferencia Internacional de Investigación Cualitativa 2024</h3>
+                                <p>Evento anual que reúne a investigadores de toda Latinoamérica para compartir avances en metodologías cualitativas</p>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Panamá, Centro de Convenciones</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>9:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-users"></i>
+                                        <span>500+ Participantes</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="event-btn">Inscribirse</a>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <div class="date-day">22</div>
+                                <div class="date-month">ABR</div>
+                            </div>
+                            <div class="event-content">
+                                <h3>Seminario de Metodologías Mixtas</h3>
+                                <p>Taller especializado sobre la integración de métodos cualitativos y cuantitativos en investigación</p>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-laptop"></i>
+                                        <span>Modalidad Virtual</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>2:00 PM - 5:00 PM</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-users"></i>
+                                        <span>50 Participantes</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="event-btn">Inscribirse</a>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <div class="date-day">08</div>
+                                <div class="date-month">MAY</div>
+                            </div>
+                            <div class="event-content">
+                                <h3>Workshop de Análisis de Datos Cualitativos</h3>
+                                <p>Taller práctico sobre técnicas avanzadas de análisis de datos cualitativos usando software especializado</p>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Laboratorio RELATIC</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>9:00 AM - 4:00 PM</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-users"></i>
+                                        <span>25 Participantes</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="event-btn">Inscribirse</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -605,9 +1233,9 @@
                         <i class="fas fa-envelope"></i>
                         <span>Contacto</span>
                     </div>
-                    <h2 class="section-title">Hablemos de tu Proyecto</h2>
+                    <h2 class="section-title">Hablemos de tu Proyecto Académico</h2>
                     <p class="contact-description">
-                        Estamos aquí para ayudarte. Contáctanos para más información sobre nuestros servicios
+                        Estamos aquí para ayudarte. Contáctanos para más información sobre nuestros programas educativos
                     </p>
                     <div class="contact-details">
                         <div class="contact-item">
@@ -695,10 +1323,10 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Relatic Academy</span>
+                        <img src="images/logo-relatic-compact.svg" alt="RELATIC ACADEMIA Logo" class="logo-icon">
+                        <span>RELATIC ACADEMIA</span>
                     </div>
-                    <p>Institución educativa sin fines de lucro especializada en formación académica gratuita en gestión documental digital y desarrollo de competencias tecnológicas estudiantiles.</p>
+                    <p>Red Académica Latinoamericana de Investigación Cualitativa - Institución educativa sin fines de lucro especializada en investigación cualitativa, formación académica gratuita en gestión documental digital y desarrollo de competencias tecnológicas.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -735,12 +1363,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Relatic Academy. Todos los derechos reservados.</p>
-                <p>Institución Educativa Registrada | Licencia Educativa: EDU-2024-001</p>
+                <p>&copy; 2024 RELATIC ACADEMIA. Todos los derechos reservados.</p>
+                <p>Red Académica Latinoamericana de Investigación Cualitativa | Institución Educativa Registrada | Licencia Educativa: EDU-2024-001</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

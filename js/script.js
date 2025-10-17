@@ -6,13 +6,6 @@ const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const languageSelect = document.getElementById('languageSelect');
 const contactForm = document.getElementById('contactForm');
-const idForm = document.getElementById('idForm');
-const idNumberInput = document.getElementById('idNumber');
-const chatInterface = document.getElementById('chatInterface');
-const chatMessages = document.getElementById('chatMessages');
-const chatInput = document.getElementById('chatInput');
-const sendBtn = document.getElementById('sendBtn');
-const closeAssistant = document.getElementById('closeAssistant');
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -32,8 +25,6 @@ function initializeApp() {
     // Initialize contact form
     initializeContactForm();
     
-    // Initialize assistant
-    initializeAssistant();
     
     // Initialize smooth scrolling
     initializeSmoothScrolling();
@@ -179,162 +170,6 @@ function getLanguageName(code) {
     return names[code] || code;
 }
 
-// Assistant functionality
-function initializeAssistant() {
-    if (idForm) {
-        idForm.addEventListener('submit', handleIdSubmit);
-    }
-    
-    if (sendBtn) {
-        sendBtn.addEventListener('click', handleSendMessage);
-    }
-    
-    if (chatInput) {
-        chatInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                handleSendMessage();
-            }
-        });
-    }
-    
-    if (closeAssistant) {
-        closeAssistant.addEventListener('click', closeChat);
-    }
-}
-
-function handleIdSubmit(e) {
-    e.preventDefault();
-    const idNumber = idNumberInput.value.trim();
-    
-    if (!idNumber) {
-        showNotification('Por favor, ingresa un número de cédula válido', 'error');
-        return;
-    }
-    
-    // Show loading state
-    showLoading();
-    
-    // Simulate API call
-    setTimeout(() => {
-        hideLoading();
-        if (validateIdNumber(idNumber)) {
-            showChatInterface();
-            addBotMessage('¡Bienvenido! He encontrado tus documentos. ¿En qué puedo ayudarte?');
-        } else {
-            showNotification('No se encontraron documentos para este número de cédula', 'error');
-        }
-    }, 2000);
-}
-
-function validateIdNumber(idNumber) {
-    // Simple validation - in real app, this would be an API call
-    return idNumber.length >= 6 && /^\d+$/.test(idNumber);
-}
-
-function showLoading() {
-    const submitBtn = document.querySelector('.submit-btn');
-    const originalContent = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<div class="loading"></div>';
-    submitBtn.disabled = true;
-}
-
-function hideLoading() {
-    const submitBtn = document.querySelector('.submit-btn');
-    submitBtn.innerHTML = '<i class="fas fa-search"></i>';
-    submitBtn.disabled = false;
-}
-
-function showChatInterface() {
-    if (chatInterface) {
-        chatInterface.style.display = 'block';
-        chatInterface.classList.add('fade-in');
-        chatInput.focus();
-    }
-}
-
-function closeChat() {
-    if (chatInterface) {
-        chatInterface.style.display = 'none';
-        chatMessages.innerHTML = '';
-        idNumberInput.value = '';
-    }
-}
-
-function handleSendMessage() {
-    const message = chatInput.value.trim();
-    if (!message) return;
-    
-    // Add user message
-    addUserMessage(message);
-    chatInput.value = '';
-    
-    // Simulate bot response
-    setTimeout(() => {
-        const response = generateBotResponse(message);
-        addBotMessage(response);
-    }, 1000);
-}
-
-function addUserMessage(message) {
-    const messageDiv = document.createElement('div');
-    messageDiv.className = 'message user-message';
-    messageDiv.innerHTML = `
-        <div class="message-content">
-            <p>${message}</p>
-            <span class="message-time">${getCurrentTime()}</span>
-        </div>
-    `;
-    chatMessages.appendChild(messageDiv);
-    scrollToBottom();
-}
-
-function addBotMessage(message) {
-    const messageDiv = document.createElement('div');
-    messageDiv.className = 'message bot-message slide-in';
-    messageDiv.innerHTML = `
-        <div class="message-content">
-            <p>${message}</p>
-            <span class="message-time">${getCurrentTime()}</span>
-        </div>
-    `;
-    chatMessages.appendChild(messageDiv);
-    scrollToBottom();
-}
-
-function generateBotResponse(userMessage) {
-    const responses = {
-        greeting: "¡Hola! ¿En qué puedo ayudarte con tus documentos?",
-        documents: "Tienes 3 documentos disponibles: Certificado de Graduación, Carnet de Estudiante y Carta de Aceptación.",
-        help: "Puedo ayudarte a consultar tus documentos, verificar su estado, o responder preguntas sobre los servicios disponibles.",
-        goodbye: "¡Gracias por usar Relatic Internacional! Si necesitas más ayuda, no dudes en contactarnos.",
-        default: "Entiendo tu consulta. ¿Te gustaría que te ayude con algo específico sobre tus documentos?"
-    };
-    
-    const message = userMessage.toLowerCase();
-    
-    if (message.includes('hola') || message.includes('hello')) {
-        return responses.greeting;
-    } else if (message.includes('documento') || message.includes('document')) {
-        return responses.documents;
-    } else if (message.includes('ayuda') || message.includes('help')) {
-        return responses.help;
-    } else if (message.includes('gracias') || message.includes('thank')) {
-        return responses.goodbye;
-    } else {
-        return responses.default;
-    }
-}
-
-function getCurrentTime() {
-    const now = new Date();
-    return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-}
-
-function scrollToBottom() {
-    if (chatMessages) {
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-}
 
 // Contact form functionality
 function initializeContactForm() {

@@ -4,26 +4,6 @@
 
 RELATIC ACADEMIA es una institución educativa sin fines de lucro especializada en investigación cualitativa y formación académica en gestión documental digital. Este sitio web educativo ha sido diseñado para presentar nuestros programas académicos y justificar la necesidad de un tenant educativo gratuito de Microsoft 365.
 
-## Estructura del Proyecto
-
-```
-relatic-academia/
-├── index.html                    # Página principal
-├── css/
-│   └── styles.css               # Estilos CSS
-├── js/
-│   └── script.js                # Funcionalidad JavaScript
-├── images/
-│   ├── logo-relatic-academia.svg    # Logo principal
-│   ├── logo-relatic-compact.svg     # Logo compacto
-│   ├── icono-relatic-270x270.jpg    # Icono
-│   └── logo.JPG                     # Logo adicional
-├── docs/
-│   └── README.md                # Documentación detallada
-├── archive/                     # Archivos históricos
-└── assets/                      # Recursos adicionales
-```
-
 ## Características del Sitio Educativo
 
 ### 🎓 **Información Académica**
@@ -62,6 +42,18 @@ relatic-academia/
 - **Seguridad de Datos**: Azure AD para protección de información estudiantil
 - **Productividad Académica**: Office 365 para herramientas educativas
 
+## Estructura del Proyecto
+
+```
+relatic-academia/
+├── index.html                    # Página principal
+├── styles.css                    # Estilos CSS
+├── script.js                     # Funcionalidad JavaScript
+├── logo-relatic-academia.svg     # Logo principal
+├── logo-relatic-compact.svg      # Logo compacto
+└── README.md                     # Documentación
+```
+
 ## Tecnologías Utilizadas
 
 - **HTML5**: Estructura semántica moderna
@@ -78,7 +70,6 @@ relatic-academia/
 - Interfaz moderna y educativa
 - Animaciones suaves y transiciones
 - Paleta de colores académica (azul y rojo)
-- **Diseño compacto**: Espaciados optimizados para mejor densidad de contenido
 
 ### ⚡ **Funcionalidad**
 - Navegación suave entre secciones
@@ -92,7 +83,6 @@ relatic-academia/
 - Carga rápida de recursos
 - SEO optimizado para instituciones educativas
 - Accesibilidad mejorada
-- Estructura de archivos organizada
 
 ## Secciones del Sitio
 
@@ -103,16 +93,16 @@ relatic-academia/
 4. **Certificaciones**: Programas de certificación académica
 5. **Acerca de**: Información institucional
 6. **Recursos Educativos**: Guías, videos y FAQ
-7. **Acreditaciones**: Certificaciones y licencias (4 en línea)
-8. **Facultad**: Instructores y expertos académicos (4 en línea)
+7. **Acreditaciones**: Certificaciones y licencias
+8. **Facultad**: Instructores y expertos académicos
 9. **Investigación**: Centro de investigación cualitativa
 10. **Tecnología**: Infraestructura tecnológica
 11. **Admisiones**: Proceso de admisión
-12. **Políticas Académicas**: Marco normativo (4 en línea)
+12. **Políticas Académicas**: Marco normativo
 13. **Testimonios**: Experiencias de estudiantes
 14. **Becas**: Programas de apoyo económico
-15. **Instalaciones**: Infraestructura educativa (4 en línea)
-16. **Eventos**: Conferencias y seminarios (3 en línea)
+15. **Instalaciones**: Infraestructura educativa
+16. **Eventos**: Conferencias y seminarios
 17. **Contacto**: Información de contacto
 
 ## Despliegue

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="35" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Globe/Earth -->
+  <circle cx="40" cy="40" r="25" fill="#e3f2fd"/>
+  <path d="M 15 40 Q 40 20 65 40 Q 40 60 15 40" fill="#1976d2"/>
+  <path d="M 15 40 Q 40 60 65 40" fill="#42a5f5"/>
+  
+  <!-- Grid lines on globe -->
+  <path d="M 15 40 L 65 40" stroke="white" stroke-width="1" opacity="0.7"/>
+  <path d="M 40 15 L 40 65" stroke="white" stroke-width="1" opacity="0.7"/>
+  <path d="M 25 25 Q 40 15 55 25" stroke="white" stroke-width="0.5" opacity="0.5" fill="none"/>
+  <path d="M 25 55 Q 40 65 55 55" stroke="white" stroke-width="0.5" opacity="0.5" fill="none"/>
+  
+  <!-- Magnifying glass -->
+  <circle cx="50" cy="50" r="12" fill="none" stroke="#1976d2" stroke-width="3"/>
+  <line x1="60" y1="60" x2="70" y2="70" stroke="#1976d2" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Eye inside magnifying glass -->
+  <circle cx="50" cy="50" r="6" fill="white"/>
+  <circle cx="50" cy="50" r="4" fill="#1976d2"/>
+  <circle cx="50" cy="50" r="2" fill="white"/>
+  
+  <!-- Red curved lines -->
+  <path d="M 10 20 Q 30 10 50 20" stroke="#d32f2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 10 60 Q 30 70 50 60" stroke="#d32f2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Red dots at ends -->
+  <circle cx="10" cy="20" r="3" fill="#d32f2f"/>
+  <circle cx="50" cy="20" r="3" fill="#d32f2f"/>
+  <circle cx="10" cy="60" r="3" fill="#d32f2f"/>
+  <circle cx="50" cy="60" r="3" fill="#d32f2f"/>
+  
+  <!-- Company name -->
+  <text x="90" y="30" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1976d2">
+    RELATIC ACADEMIA
+  </text>
+  
+  <!-- Full subtitle -->
+  <text x="90" y="50" font-family="Arial, sans-serif" font-size="10" font-weight="normal" fill="#1976d2">
+    RED ACADÉMICA LATINOAMERICANA DE INVESTIGACIÓN CUALITATIVA
+  </text>
+</svg>
